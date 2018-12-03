@@ -210,6 +210,7 @@
                  <span class="post-meta-item-text">{{__('post.visitors')}}&#58;</span>
                {% endif %}
                  <span class="leancloud-visitors-count"></span>
+				 <span>℃</span>
              </span>
           {% endif %}
 
@@ -221,8 +222,8 @@
           {% endif %}
            
 		  {% if is_pv %}
-		  <span class="post-meta-divider">|</span>
-		  <span id="busuanzi_value_page_pv"></span>次阅读
+		     <span class="post-meta-divider">|</span>
+		     <span id="busuanzi_value_page_pv"></span>次阅读
 		  {% endif %}
 		  
           {% if theme.post_wordcount.wordcount or theme.post_wordcount.min2read %}
@@ -437,5 +438,4 @@
   {### END POST BLOCK ###}
   {######################}
   </article>
-
 {% endmacro %}

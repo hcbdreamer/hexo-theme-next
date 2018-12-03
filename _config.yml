@@ -25,10 +25,10 @@ override: false
 
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
-favicon:
-  small: /images/EVA.bmp
-  medium: /images/EVA.bmp
-  apple_touch_icon: /images/EVA.bmp
+favicon: #images/cute.ico
+  small: /images/cute.ico
+  medium: /images/cute.ico
+  apple_touch_icon: /images/cute.ico
   #small: /images/favicon-16x16-next.png
   #medium: /images/favicon-32x32-next.png
   #apple_touch_icon: /images/apple-touch-icon-next.png
@@ -37,7 +37,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "学习笔记,Hexo, NexT"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -128,9 +128,9 @@ scheme: Gemini
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+social:
+  GitHub: https://github.com/hcbdreamer || github
+  E-Mail: mailto:15636336680@163.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -233,9 +233,9 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
-  totalcount: false
+  wordcount: true   #字数统计
+  min2read: true  #阅读时长
+  totalcount: true  #总字数统计
   separated_meta: true
 
 # Wechat Subscriber
@@ -252,7 +252,7 @@ post_wordcount:
 
 # Declare license on posts
 post_copyright:
-  enable: false
+  enable: true
   license: CC BY-NC-SA 3.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
@@ -382,8 +382,8 @@ changyan:
 # more info please open https://valine.js.org
 valine:
   enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  appid:  P3tFgJDKxOTD6ziR0pYVUpDc-gzGzoHsz #your leancloud application appid
+  appkey: ekBW9quOYDg4IYsulqLuHjDp  #your leancloud application appkey
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
@@ -398,11 +398,10 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
-
+livere_uid: MTAyMC80MTQyMC8xNzk2Nw==
 #畅言评论系统
-changyan_appid: 'cytUqndg2'
-changyan_conf: '803c2f4a75c93b6be753815f95c487ec'
+#changyan_appid: 'cytUqndg2'
+#changyan_conf: '803c2f4a75c93b6be753815f95c487ec'
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
@@ -414,10 +413,10 @@ gitment:
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
   language: # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github ID
-  github_repo: # MUST HAVE, The repo you use to store Gitment comments
-  client_id: # MUST HAVE, Github client id for the Gitment
-  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  github_user: hcbdreamer# MUST HAVE, Your Github ID
+  github_repo: hcbdreamer.github.io# MUST HAVE, The repo you use to store Gitment comments
+  client_id: 3cbe8c911fd04a616c0f# MUST HAVE, Github client id for the Gitment
+  client_secret: e1042948b361d200adfb6d8e5eb20b4a541512c6# EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
@@ -538,9 +537,9 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: P3tFgJDKxOTD6ziR0pYVUpDc-gzGzoHsz
+  app_key: ekBW9quOYDg4IYsulqLuHjDp
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -556,7 +555,7 @@ firestore:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
@@ -702,7 +701,7 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
 three_waves: false
